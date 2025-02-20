@@ -1,48 +1,10 @@
-# 基础环境
-python>=3.9,<3.13
-
-# GUI框架
-PyQt5>=5.15.11
-PyQt5-tools>=5.15.11
-
-# 数据处理
-pandas>=2.0.0
-openpyxl>=3.1.2  # Excel支持
-xlrd>=2.0.1      # Excel读取支持
-XlsxWriter>=3.1.2  # Excel写入支持
-
-# 音频处理
-pyaudio>=0.2.13
-pygame>=2.5.0
+PyQt5>=5.15
+pandas>=2.2.2
+PyAudio>=0.2.13
+pygame>=2.6.0
 scipy>=1.11.0
 numpy>=1.24.0
 wave>=0.0.2
-sounddevice>=0.4.6  # 音频设备支持
-
-# AI服务
 openai>=1.0.0
 python-dotenv>=1.0.0
-tiktoken>=0.5.1    # OpenAI token计数
-
-# 网络
-websocket-client>=1.6.0
-urllib3>=2.0.0
-requests>=2.31.0
-
-# 系统集成
-psutil>=5.9.0      # 系统资源监控
-pywin32>=305; platform_system == "Windows"  # Windows系统支持
-
-# 日志和调试
-loguru>=0.7.0
-pretty-errors>=1.2.25
-
-# 开发工具
-pytest>=7.0.0
-pytest-qt>=4.2.0
-pytest-cov>=4.1.0
-black>=23.0.0
-pylint>=2.17.0
-mypy>=1.5.1
-autopep8>=2.0.0
-flake8>=6.1.0
+websocket-client>=1.7.0

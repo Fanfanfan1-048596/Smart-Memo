@@ -41,12 +41,6 @@ conda activate smart-memo
 pip install -r requirements.txt
 ```
 
-3. 安装开发依赖（可选）：
-
-```bash
-pip install -e ".[dev]"
-```
-
 ## 配置说明
 
 1. 创建配置文件：
@@ -75,12 +69,6 @@ OPENAI_API_KEY=your_api_key
 python main.py
 ```
 
-或使用安装后的命令：
-
-```bash
-smart-memo
-```
-
 ## 项目结构
 
 ```
@@ -107,7 +95,6 @@ smart-memo/
 │   ├── notification.wav  # 提醒音效（由于使用讯飞语音合成，已无用）
 │   └── icon.png         # 应用图标
 ├── requirements.txt     # 依赖清单
-├── setup.py            # 安装配置
 └── README.md          # 项目说明
 ```
 
@@ -121,6 +108,15 @@ smart-memo/
 ```
 
 2. 语音输入支持同样的自然语言（当前仅支持普通话）表达。
+
+## 可能出现的问题
+
+1. 语音无法保存，可能是因为 `pyaudio` 缺少了 `portaudio19` 库，只需
+
+    ``` bash
+    sudo apt update
+    sudo apt install portaudio19-dev python3-pyaudio
+    ```
 
 ## 贡献指南
 
