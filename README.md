@@ -22,6 +22,7 @@ SmartMemo 是一个基于 AI 的智能备忘录应用，支持文本和语音输
 - Python 3.9 或更高版本
 - 操作系统：Linux（已在 Ubuntu22.04 上测试）
 - [科大讯飞 API 密钥](https://console.xfyun.cn/services)
+  
   > [API官方文档](https://www.xfyun.cn/doc/asr/voicedictation/API.html)
 - [OpenAI API 密钥](https://github.com/chatanywhere/GPT_API_free)
 
@@ -84,7 +85,8 @@ smart-memo
 
 ```
 smart-memo/
-├── src/                   
+├── src/
+│   ├── __init__.py
 │   ├── ai_service.py      # AI 服务实现
 │   ├── audio_manager.py   # 音频管理
 │   ├── config.py          # 配置管理
@@ -92,10 +94,12 @@ smart-memo/
 │   ├── reminder.py        # 提醒服务
 │   ├── xf_iat_service.py  # 讯飞语音识别
 │   └── xf_tts_service.py  # 讯飞语音合成
-├── ui/                   
+├── ui/     
+│   ├── __init__.py
 │   ├── main_ui.py        # UI创建与定义（使用PyQT5）
 │   └── main_window.py    # 主窗口交互功能实现
-├── utils/                
+├── utils/   
+│   ├── __init__.py
 │   ├── audio_utils.py    # 音频处理
 │   ├── helpers.py        # 一点辅助函数
 │   └── reminder_sound_utils.py  # 提醒音效
@@ -116,17 +120,7 @@ smart-memo/
 每月1日检查报表
 ```
 
-2. 语音输入支持同样的自然语言表达。
-
-## 常见问题
-
-1. 如何处理音频设备未找到的问题？
-   - 确保系统已正确配置音频设备
-   - 检查用户权限是否正确
-
-2. 提醒功能无效？
-   - 确保系统托盘可用
-   - 检查系统通知权限
+2. 语音输入支持同样的自然语言（当前仅支持普通话）表达。
 
 ## 贡献指南
 
@@ -138,11 +132,6 @@ smart-memo/
 ## 许可证
 
 本项目基于 MIT 许可证开源。
-
-## 联系方式
-
-- 作者：Fanfanfan
-- 邮箱：202230101018@mail.scut.edu.cn
 
 ## 致谢
 
