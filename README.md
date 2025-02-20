@@ -31,7 +31,7 @@ SmartMemo 是一个基于 AI 的智能备忘录应用，支持文本和语音输
 1. 创建并激活 conda 环境：
 
 ```bash
-conda env create -n smart-memo
+conda create -n smart-memo python==3.10
 conda activate smart-memo
 ```
 
